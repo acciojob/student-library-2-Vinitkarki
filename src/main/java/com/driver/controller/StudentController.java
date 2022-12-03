@@ -2,6 +2,10 @@ package com.driver.controller;
 
 import com.driver.models.Student;
 import com.driver.services.StudentService;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +14,10 @@ import org.springframework.web.bind.annotation.*;
 //Add required annotations
 @RestController
 @RequestMapping("/student")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class StudentController {
 
     //Add required annotations

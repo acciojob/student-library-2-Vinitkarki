@@ -2,6 +2,10 @@ package com.driver.controller;
 
 import com.driver.models.Author;
 import com.driver.services.AuthorService;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 //Add required annotations
 @RestController
 @RequestMapping("/author")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class AuthorController {
 
     //Write createAuthor API with required annotations

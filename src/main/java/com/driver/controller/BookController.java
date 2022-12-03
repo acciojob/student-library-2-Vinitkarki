@@ -2,6 +2,10 @@ package com.driver.controller;
 
 import com.driver.models.Book;
 import com.driver.services.BookService;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +16,10 @@ import java.util.List;
 //Add required annotations
 @RestController
 @RequestMapping("/book")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class BookController {
 
 
