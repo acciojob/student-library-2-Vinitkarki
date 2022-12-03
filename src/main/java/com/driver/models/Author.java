@@ -12,14 +12,14 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+
 @Table(name = "Author")
 public class Author {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String name;
 
     @Column(unique = true)
@@ -32,7 +32,11 @@ public class Author {
     @JsonIgnoreProperties("author")
     private List<Book> booksWritten;
 
-
-
+    public Author(String name, String email, int age, String country) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.country = country;
+    }
 }
 

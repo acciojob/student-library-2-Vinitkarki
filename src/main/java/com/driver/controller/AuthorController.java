@@ -17,10 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 //Add required annotations
 @RestController
 @RequestMapping("/author")
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+
 public class AuthorController {
 
     //Write createAuthor API with required annotations

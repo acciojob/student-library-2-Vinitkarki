@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.*;
 //Add required annotations
 @RestController
 @RequestMapping("/transaction")
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+
 public class TransactionController {
 
     @Autowired

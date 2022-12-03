@@ -14,10 +14,7 @@ import org.springframework.web.bind.annotation.*;
 //Add required annotations
 @RestController
 @RequestMapping("/student")
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+
 public class StudentController {
 
     //Add required annotations

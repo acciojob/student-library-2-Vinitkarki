@@ -14,7 +14,7 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
+
 @Table(name="Student")
 public class Student {
 
@@ -59,5 +59,10 @@ public class Student {
                 '}';
     }
 
-
+    public Student(String emailId, String name, int age, String country) {
+        this.emailId = emailId;
+        this.name = name;
+        this.age = age;
+        this.country = country;
+    }
 }
