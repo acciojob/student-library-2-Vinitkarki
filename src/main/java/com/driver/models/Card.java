@@ -1,6 +1,10 @@
 package com.driver.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -9,6 +13,10 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@Table(name="Card")
 public class Card {
 
     @Id

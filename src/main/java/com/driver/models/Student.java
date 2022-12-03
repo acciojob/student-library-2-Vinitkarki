@@ -1,6 +1,10 @@
 package com.driver.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -8,6 +12,10 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@Table(name="Student")
 public class Student {
 
     @Id
