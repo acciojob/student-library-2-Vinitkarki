@@ -20,19 +20,19 @@ public class BookService {
     }
 
     public List<Book> getBooks(String genre, boolean available, String author){
-        List<Book> books = new ArrayList<>(); //find the elements of the list by yourself
+        //find the elements of the list by yourself
         if(author!=null && genre!=null && available){
-            books=bookRepository2.findBooksByGenreAuthor(genre,author,available);
+            return bookRepository2.findBooksByGenreAuthor(genre,author,available);
         }
         else if(author!=null){
-            books=bookRepository2.findBooksByAuthor(author,available);
+            return bookRepository2.findBooksByAuthor(author,available);
         }
         else if(genre!=null){
-            books=bookRepository2.findBooksByGenre(genre,available);
+            return bookRepository2.findBooksByGenre(genre,available);
         }
         else{
-            books=bookRepository2.findByAvailability(available);
+            return bookRepository2.findByAvailability(available);
         }
-        return books;
+
     }
 }
