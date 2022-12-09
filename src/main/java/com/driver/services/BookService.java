@@ -48,9 +48,9 @@ public class BookService {
 
 
         if(genre != null && author != null){
-            return bookRepository2.findBooksByGenreAuthor(String.valueOf(genre), author, available);
+            return bookRepository2.findBooksByGenreAuthor(genre.toString(), author, available);
         }else if(genre != null){
-            return bookRepository2.findBooksByGenre(String.valueOf(genre), available);
+            return bookRepository2.findBooksByGenre(genre.toString(), available);
         }else if(author != null){
             return bookRepository2.findBooksByAuthor(author, available);
         }else{
